@@ -5,7 +5,8 @@ const app = express()
 // set to read a request data from JSON format
 app.use(express.json())
 
-// endpoint 5
+//SEARCHING
+// endpoint 1
 app.post("/searchdata", (request,response) => {
     let keyword = request.body.keyword
     let data = [
@@ -39,6 +40,9 @@ app.post("/searchdata", (request,response) => {
     })
 })
 
-app.listen(8000, () => {
+
+    app.listen(8000, () => {
     console.log(`Server run on port 8000`);
 })
+
+
